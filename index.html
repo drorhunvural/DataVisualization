@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 3 - Matrix_Multiplication</title>
+   <style>
+
+       h1{
+           text-align: center;
+       }
+
+       h2{
+           text-align: center;
+       }
+
+       #matrices{
+            text-align: center;
+       }
+
+       #sliders{
+        position: absolute;
+        top: 110px;
+        left: 100px;
+       }
+
+       #buttons{
+        position: absolute;
+        top: 260px;
+        left: 100px;
+       }
+
+   </style>
+
+  </head>
+  <body>
+    <h1>Assignment 3 - Matrix_Multiplication</h1>
+    <h2>Orhun Vural</h2>
+
+    <div id="matrices">
+
+    
+    <svg id="firstmatrix">
+        <path id="firstmatrix_path"></path>
+        <path id="firstmatrix_control"></path>
+    </svg>
+
+
+    <svg id="secondmatrix">
+        <path id="secondmatrix_path"></path>
+        <path id="secondmatrix_control"></path>
+    </svg>
+    
+    <svg id="thirdmatrix">
+        <path id="thirdmatrix_path"></path>
+        <path id="thirdmatrix_control"></path>>
+    </svg>
+
+</div>
+
+<div id="sliders">
+<p>n: <input min=2 max=100 value=0 type="range" id="slider"></p>
+<p>m: <input min=2 max=100 value=0 type="range" id="slider"></p>
+<p>p: <input min=2 max=100 value=0 type="range" id="slider"></p>
+</div>
+
+<div id="buttons">
+<button onclick="play()" id="play">Play</button>
+<button onclick="stop()" id="stop">Stop</button>
+<button onclick="reset()" id="reset">Reset</button>
+</div>
+
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="main.js"></script>
+
+
+  </body>
+</html>
